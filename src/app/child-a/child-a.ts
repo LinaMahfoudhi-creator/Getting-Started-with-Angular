@@ -7,7 +7,7 @@ import {GrandChild} from '../grand-child/grand-child';
     GrandChild
   ],
   templateUrl: './child-a.html',
-  styleUrl: './child-a.scss'
+  styleUrl: './child-a.css'
 })
 export class ChildA {
 

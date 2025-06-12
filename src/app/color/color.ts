@@ -6,7 +6,7 @@ import {Fils} from '../fils/fils';
   selector: 'app-color',
   imports: [FormsModule, Fils],
   templateUrl: './color.html',
-  styleUrl: './color.scss'
+  styleUrl: './color.css'
 })
 export class Color {
   protected color='red';

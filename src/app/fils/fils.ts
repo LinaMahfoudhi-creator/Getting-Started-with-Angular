@@ -4,7 +4,7 @@ import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
   selector: 'app-fils',
   imports: [],
   templateUrl: './fils.html',
-  styleUrl: './fils.scss'
+  styleUrl: './fils.css'
 })
 export class Fils implements OnInit {
   @Input() filsProperty: any;

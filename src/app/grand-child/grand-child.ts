@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-grand-child',
   imports: [],
   templateUrl: './grand-child.html',
-  styleUrl: './grand-child.scss'
+  styleUrl: './grand-child.css'
 })
 export class GrandChild {
 
