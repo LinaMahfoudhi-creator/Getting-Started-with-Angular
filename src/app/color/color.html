@@ -1,0 +1,10 @@
+<app-fils (sendRequestToDad)="processReq($event)" [filsProperty]="color"></app-fils>
+<div [style.background-color]="color">
+  Color
+</div>
+<input #inputColor
+       [(ngModel)]="color"
+       type="text"
+       class="form-control"
+       placeholder="Enter a color">
+Le contenu de l'input est : {{color}}<br>

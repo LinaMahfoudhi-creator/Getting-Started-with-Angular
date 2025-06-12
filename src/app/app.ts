@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Color} from './color/color';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [
+    Color,
+  ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
-  protected title = 'first_angular';
+  protected colour = 'yellow';
+  show = false;
+  protected changeStatus(){
+    this.show = !this.show;
+  }
 }
