@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import {Color} from './color/color';
+import {Style} from './directive/style/style';
+import {Class} from './directive/class/class';
 import {Cv} from './cvTech/cv/cv';
 
 @Component({
   selector: 'app-root',
   imports: [
-    Color,
+    Class,
     Cv,
   ],
   templateUrl: './app.html',

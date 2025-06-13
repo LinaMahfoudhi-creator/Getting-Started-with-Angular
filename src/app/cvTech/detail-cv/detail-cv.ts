@@ -9,6 +9,6 @@ import {Personne} from '../../Model/Personne';
   styleUrl: './detail-cv.css'
 })
 export class DetailCv {
-  @Input() personne: Personne= new Personne(0, '', '', 0, '', 0, '');
+  @Input() personne!: Personne;
 
 }
