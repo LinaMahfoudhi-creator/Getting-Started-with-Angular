@@ -4,12 +4,14 @@ import {DetailCv} from '../detail-cv/detail-cv';
 import {Personne} from '../../Model/Personne';
 import {CommonModule} from '@angular/common';
 import { CvService } from '../cv'
+import {RouterOutlet} from '@angular/router';
 @Component({
   selector: 'app-cv',
   imports: [
     ListeCv,
     DetailCv,
-    CommonModule
+    CommonModule,
+    RouterOutlet
   ],
   templateUrl: './cv.html',
   styleUrl: './cv.css'

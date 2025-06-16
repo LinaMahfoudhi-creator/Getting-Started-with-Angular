@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class DefaultImagePipe implements PipeTransform {
 
-  transform(value: string, ...args: unknown[]): string {
+  transform(value: string|undefined, ...args: unknown[]): string {
     if(!value){
       return 'default-profile.png'; // Path to your default image
     }
