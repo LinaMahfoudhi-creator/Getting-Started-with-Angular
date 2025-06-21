@@ -5,13 +5,15 @@ import {Personne} from '../../Model/Personne';
 import {CommonModule} from '@angular/common';
 import { CvService } from '../cv'
 import {RouterOutlet} from '@angular/router';
+import {Embauche} from '../embauche/embauche';
 @Component({
   selector: 'app-cv',
   imports: [
     ListeCv,
     DetailCv,
     CommonModule,
-    RouterOutlet
+    RouterOutlet,
+    Embauche
   ],
   templateUrl: './cv.html',
   styleUrl: './cv.css'
