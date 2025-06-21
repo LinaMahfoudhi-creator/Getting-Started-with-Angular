@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {Header} from './header/header';
 import {RouterSimulator} from './router-simulator/router-simulator';
+import {ObservableComponent} from './observable/observable';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,7 @@ import {RouterSimulator} from './router-simulator/router-simulator';
     RouterOutlet,
     Header,
     RouterSimulator,
+    ObservableComponent,
 
   ],
   templateUrl: './app.html',
