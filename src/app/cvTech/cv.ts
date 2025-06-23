@@ -23,14 +23,14 @@ export class CvService{
   getFakePersonnes(): Personne[] {
     return this.personnes;
   }
-  getPersonneByid(id: number): Personne | undefined {
-    const personne = this.personnes.find(
-      p => {
-        return p.id == id
-      });
-    return personne;
+  getPersonneByid(id: number): Observable<Personne> {
+    return this.http.get<Personne>(`http://localhost:3000/personnes/${id}`)
   }
   addPersonne(personne: Personne): Observable<any> {
     return this.http.post('http://localhost:3000/personnes', personne);
   }
+  deletePersonne(id: number): Observable<any> {
+    return this.http.delete(`http://localhost:3000/personnes/${id}`);
+  }
+
 }

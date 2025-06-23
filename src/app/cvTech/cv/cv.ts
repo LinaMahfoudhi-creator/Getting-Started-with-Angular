@@ -32,7 +32,7 @@ export class Cv implements OnInit {
         this.personnes = personnes
       },
       (error) => {
-        console.error('Error fetching personnes:', error);
+        this.personnes= this.cvService.getFakePersonnes();
       }
     );
   }
