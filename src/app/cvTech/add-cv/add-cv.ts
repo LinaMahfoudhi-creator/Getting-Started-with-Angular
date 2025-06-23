@@ -15,8 +15,15 @@ export class AddCv {
   constructor(private cvService: CvService,
               private router: Router) { }
     addPersonne(formulaire:NgForm) {
-    const link=['cv'];
-      this.cvService.addPersonne(formulaire.value);
-      this.router.navigate(link);
+    console.log('Formulaire:', formulaire.value);
+    this.cvService.addPersonne(formulaire.value).subscribe(
+      (response) => {
+        const link=['cv'];
+        this.router.navigate(link);
+      },
+      (error) => {
+        console.log('Error adding personne:', error);
+      }
+    );
     }
 }

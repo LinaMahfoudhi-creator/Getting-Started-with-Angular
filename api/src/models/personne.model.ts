@@ -6,6 +6,12 @@ export class Personne extends Entity {
     type: 'string',
     required: true,
   })
+  cin: number;
+
+  @property({
+    type: 'string',
+    required: true,
+  })
   name: string;
 
   @property({
@@ -37,7 +43,6 @@ export class Personne extends Entity {
     generated: true,
   })
   id?: number;
-
 
   constructor(data?: Partial<Personne>) {
     super(data);
